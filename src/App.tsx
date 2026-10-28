@@ -5,7 +5,7 @@ function AppVisual({ visual }: { visual: App['visual'] }) {
   if (visual === 'gamepad') {
     return (
       <div className="flex h-full items-center justify-center bg-[#0d1728]">
-        <img src="/app-icons/gamepad-bench.png" alt="" className="size-32 rounded-3xl shadow-2xl sm:size-40" />
+        <img src={`${import.meta.env.BASE_URL}app-icons/gamepad-bench.png`} alt="" className="size-32 rounded-3xl shadow-2xl sm:size-40" />
       </div>
     )
   }
@@ -14,7 +14,7 @@ function AppVisual({ visual }: { visual: App['visual'] }) {
     return (
       <div className="flex h-full items-center justify-center bg-[#172c3c]">
         <div className="flex size-36 items-center justify-center rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl sm:size-44">
-          <img src="/app-icons/lan-share.png" alt="" className="size-28 sm:size-36" />
+          <img src={`${import.meta.env.BASE_URL}app-icons/lan-share.png`} alt="" className="size-28 sm:size-36" />
         </div>
       </div>
     )
